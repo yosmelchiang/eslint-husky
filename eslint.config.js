@@ -8,6 +8,11 @@ module.exports = defineConfig([
     languageOptions: { globals: globals.node, sourceType: 'script' },
     plugins: { js },
     extends: ['js/recommended'],
+    ignores: [
+      '**/README.md', // Ignore the README file
+      '**/*.test.js',  // Ignore all test files
+      '**/node_modules/**', // Ignore node_modules folder
+    ],
     rules: {
       semi: ['error', 'always'], // Require semicolons
       indent: ['error', 2], // Enforce 2-space indentation
