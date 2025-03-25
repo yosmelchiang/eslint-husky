@@ -1,3 +1,11 @@
+# About
+
+Husky will run the ESLint check on all files that are staged for commit, unless specifically configure it to only run on certain files or types of files.
+
+- When setting up Husky and with a pre-commit hook to run ESLint, Husky will check all files that are staged for commit (those added with git add) during the commit process.
+
+- If ESLint finds any issues with the staged files, the commit will be blocked unless we fix those issues, depending on how ESLint rules are configured.
+
 ### 1. **Install Husky**
 
 ```bash
